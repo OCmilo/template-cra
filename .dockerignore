@@ -1,0 +1,6 @@
+node_modules/
+coverage/
+.eslintrc.js
+.gitignore
+README.md
+.git/
