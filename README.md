@@ -1,6 +1,6 @@
 # template-cra
 
-personal template for create-react-app projects.
+Personal template for create-react-app projects.
 
 # Requisitos
 
@@ -43,10 +43,6 @@ Você está pronto para desenvolver!
 
 O Ambiente de desenvolvimento conta com _Hot Reloading_, ou seja, sempre que houver uma alteração no código-fonte, a página atualizará automaticamente para representar a nova alteração.
 
-# Estrutura do projeto
-
-TODO
-
 # Linter
 
 O template utiliza Eslint como linter para o projeto. Garantindo qualidade
@@ -75,7 +71,15 @@ No estilo do create-react-app, os testes unitários se encontram em pastas **tes
 
 # Deploy
 
-TODO
+Para realizar o build e rodar o container:
+
+    docker build -t template-cra .
+    docker run -d -p 80:80 --name="template-cra-container" template-cra
+
+Para remover após uso:
+
+    docker container rm -f template-cra
+    docker image prune
 
 # Referências
 
