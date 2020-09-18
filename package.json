@@ -7,7 +7,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:validation": "jest --coverage --passWithNoTests",
+    "test:validation": "CI=true yarn test --coverage --passWithNoTests",
     "lint": "eslint src/",
     "format": "prettier --write \"**/*.+(js|json|css|md|mdx|html)\"",
     "validate": "npm-run-all --parallel format lint test:validation",
